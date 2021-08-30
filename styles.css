@@ -1,0 +1,65 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  --black: #292f36;
+  --blue: #23b5d3;
+  --pink: #ff4365;
+  --white: #ffffff;
+
+  --large: 2.25rem;
+  --med: 1.5rem;
+  --small: 1.125rem;
+}
+
+*:not(i) {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+}
+
+.title {
+  color: var(--blue);
+  font-size: var(--large);
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.subtitle {
+  font-size: var(--med);
+  text-align: center;
+  margin: 3rem;
+}
+
+ul {
+  margin: auto;
+  width: fit-content;
+  list-style-type: none;
+}
+
+.list li {
+  font-size: var(--med);
+  margin: 1rem;
+  color: var(--pink);
+}
+
+.list i {
+  color: var(--blue);
+}
+
+.button {
+  font-size: var(--med);
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  width: fit-content;
+
+  background: var(--pink);
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #6e0d1f;
+}
