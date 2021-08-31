@@ -10,7 +10,7 @@
 
   --large: 4rem;
   --med: 2rem;
-  --small: 1.125rem;
+  --small: 1.5rem;
 }
 
 *:not(i) {
@@ -20,6 +20,33 @@
 body {
   background: var(--black);
   color: var(--white);
+}
+
+.icon {
+  font-size: var(--med);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem;
+}
+
+nav {
+  margin: 1rem;
+}
+
+nav ul {
+  font-size: var(--small);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  list-style: none;
+}
+
+nav li {
+  margin: 0.5rem;
 }
 
 .title {
