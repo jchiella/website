@@ -8,8 +8,8 @@
   --pink: #ff4365;
   --white: #ffffff;
 
-  --large: 2.25rem;
-  --med: 1.5rem;
+  --large: 4rem;
+  --med: 2rem;
   --small: 1.125rem;
 }
 
@@ -35,15 +35,14 @@ body {
   margin: 3rem;
 }
 
-ul {
+.list {
   margin: auto;
-  width: fit-content;
-  list-style-type: none;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
 }
 
-.list li {
+.list td {
   font-size: var(--med);
-  margin: 1rem;
   color: var(--pink);
 }
 
@@ -62,4 +61,14 @@ ul {
   padding: 0.7rem 1rem 0.7rem 1rem;
   border-radius: 5px;
   box-shadow: 3px 3px 5px #6e0d1f;
+}
+
+i {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 2rem;
+}
+
+a {
+  color: inherit;
 }
