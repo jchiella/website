@@ -49,6 +49,10 @@ nav li {
   margin: 0.5rem;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 .title {
   color: var(--blue);
   font-size: var(--large);
