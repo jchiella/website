@@ -83,6 +83,7 @@ nav a {
 
 .button {
   font-size: var(--med);
+  color: var(--white);
   display: block;
   margin: auto;
   margin-top: 2rem;
@@ -94,7 +95,12 @@ nav a {
   box-shadow: 3px 3px 5px #6e0d1f;
 }
 
-i {
+.button:hover {
+  background: var(--blue);
+  box-shadow: none;
+}
+
+table i {
   width: 1rem;
   height: 1rem;
   margin-right: 2rem;
