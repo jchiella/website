@@ -29,10 +29,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .button {
-  font-size: var(--small);
-
   width: fit-content;
-  padding: 0.5rem 1rem 0.5rem 1rem;
   border: none;
 }
 

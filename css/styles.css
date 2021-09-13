@@ -82,7 +82,7 @@ nav a {
 }
 
 .button {
-  font-size: var(--med);
+  font-size: var(--small);
   color: var(--white);
   display: block;
   margin: auto;
@@ -90,9 +90,11 @@ nav a {
   width: fit-content;
 
   background: var(--pink);
-  padding: 0.7rem 1rem 0.7rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 5px;
   box-shadow: 3px 3px 5px #6e0d1f;
+
+  text-decoration: none;
 }
 
 .button:hover {
