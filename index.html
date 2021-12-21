@@ -40,8 +40,8 @@
         <td>
           <i class="fas fa-birthday-cake"></i>
         </td>
-        <td>
-          17
+        <td id="age">
+          ??
         </td>
       </tr>
       <tr>
@@ -72,5 +72,9 @@
 
     <a class="button" href="/contact"><i class="fas fa-envelope"></i> Get in touch!</a>
   </main>
+
+  <script>
+    document.getElementById('age').textContent = (new Date().getFullYear() - 2003).toString();
+  </script>
 </body>
 </html>
