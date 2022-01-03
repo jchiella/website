@@ -74,7 +74,19 @@
   </main>
 
   <script>
-    document.getElementById('age').textContent = (new Date().getFullYear() - 2003).toString();
+    const birthDate = new Date(2003, 10, 19);
+
+    const getAge = () => {
+      const today = new Date(); 
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+          age--;
+      }
+      return age;
+    };
+
+    document.getElementById('age').textContent = getAge().toString();
   </script>
 </body>
 </html>
