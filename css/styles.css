@@ -156,3 +156,18 @@ a {
   display: grid;
   align-items: center;
 }
+
+p {
+  margin: 1rem 7rem;
+  font-size: var(--small);
+}
+
+img.portrait {
+  display: block;
+  width: 15rem;
+  margin: 2rem auto;
+
+  padding: 2px;
+  border: 2px solid var(--white);
+  border-radius: 5px;
+}
