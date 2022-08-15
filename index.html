@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>james chiella | home</title>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -13,6 +14,7 @@
 
   <script src="https://kit.fontawesome.com/99eba62257.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
     <div class="icon">
@@ -24,7 +26,6 @@
     <nav>
       <ul>
         <li><a href="/bio">bio</a></li>
-        <li><a href="/projects">projects</a></li>
         <li><a href="/contact">contact</a></li>
       </ul>
     </nav>
@@ -71,26 +72,24 @@
       </tr>
       <tr>
         <td>
-          <i class="fab fa-youtube"></i>
+          <i class="fab fa-linkedin"></i>
         </td>
         <td>
-          <a href="https://www.youtube.com/channel/UCFwxSE2v7xUe1I4DDsip8Sg" target="_blank">YouTube</a>
+          <a href="https://www.linkedin.com/in/james-chiella/" target="_blank">LinkedIn</a>
         </td>
       </tr>
-    </table>
-
-    <a class="button" href="/contact"><i class="fas fa-envelope"></i> Get in touch!</a>
+      <a class="button" href="/contact"><i class="fas fa-envelope"></i> Get in touch!</a>
   </main>
 
   <script>
     const birthDate = new Date(2003, 10, 19);
 
     const getAge = () => {
-      const today = new Date(); 
+      const today = new Date();
       let age = today.getFullYear() - birthDate.getFullYear();
       const m = today.getMonth() - birthDate.getMonth();
       if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-          age--;
+        age--;
       }
       return age;
     };
@@ -98,4 +97,5 @@
     document.getElementById('age').textContent = getAge().toString();
   </script>
 </body>
+
 </html>
