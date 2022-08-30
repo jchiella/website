@@ -1,101 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: page.njk
+title: home
+---
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>james chiella | home</title>
+<main>
+  <h1 class="title">Hi there!</h1>
+  <h2 class="subtitle">
+    I'm James, and this is my corner of the internet.
+  </h2>
+  <!-- line -->
+  <table class="list">
+    <tr>
+      <td>
+        <i class="fas fa-birthday-cake"></i>
+      </td>
+      <td id="age">
+        ??
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <i class="fas fa-user"></i>
+      </td>
+      <td>
+        he/him
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <i class="fas fa-map-marker-alt"></i>
+      </td>
+      <td>
+        Canada
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <i class="fab fa-github"></i>
+      </td>
+      <td>
+        <a href="https://github.com/jchiella" target="_blank">Github</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <i class="fab fa-linkedin"></i>
+      </td>
+      <td>
+        <a href="https://www.linkedin.com/in/james-chiella/" target="_blank">LinkedIn</a>
+      </td>
+    </tr>
+    <a class="button" href="/contact"><i class="fas fa-envelope"></i> Get in touch!</a>
+</main>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
+<script>
+  const birthDate = new Date(2003, 10, 19);
 
-  <script src="https://kit.fontawesome.com/99eba62257.js" crossorigin="anonymous"></script>
-</head>
+  const getAge = () => {
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  };
 
-<body>
-  <header>
-    <div class="icon">
-      <a class="current" href="/">
-        <i class="fas fa-cat"></i>
-      </a>
-    </div>
-
-    <nav>
-      <ul>
-        <li><a href="/bio">bio</a></li>
-        <li><a href="/contact">contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <h1 class="title">Hi there!</h1>
-    <h2 class="subtitle">
-      I'm James, and this is my corner of the internet.
-    </h2>
-    <!-- line -->
-    <table class="list">
-      <tr>
-        <td>
-          <i class="fas fa-birthday-cake"></i>
-        </td>
-        <td id="age">
-          ??
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <i class="fas fa-user"></i>
-        </td>
-        <td>
-          he/him
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <i class="fas fa-map-marker-alt"></i>
-        </td>
-        <td>
-          Canada
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <i class="fab fa-github"></i>
-        </td>
-        <td>
-          <a href="https://github.com/jchiella" target="_blank">Github</a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <i class="fab fa-linkedin"></i>
-        </td>
-        <td>
-          <a href="https://www.linkedin.com/in/james-chiella/" target="_blank">LinkedIn</a>
-        </td>
-      </tr>
-      <a class="button" href="/contact"><i class="fas fa-envelope"></i> Get in touch!</a>
-  </main>
-
-  <script>
-    const birthDate = new Date(2003, 10, 19);
-
-    const getAge = () => {
-      const today = new Date();
-      let age = today.getFullYear() - birthDate.getFullYear();
-      const m = today.getMonth() - birthDate.getMonth();
-      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-      }
-      return age;
-    };
-
-    document.getElementById('age').textContent = getAge().toString();
-  </script>
-</body>
-
-</html>
+  document.getElementById('age').textContent = getAge().toString();
+</script>
