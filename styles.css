@@ -2,6 +2,8 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -62,6 +64,7 @@ canvas {
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.5vw;
 }
 
 .button:hover {
