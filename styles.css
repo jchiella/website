@@ -23,6 +23,7 @@ h1 {
 
 p {
     width: 50ch;
+    margin: 1rem;
 }
 
 img {
@@ -45,8 +46,8 @@ canvas {
 }
 
 .socials i {
-    margin: 0.5rem;
-    font-size: 2rem;
+    margin: 1rem;
+    font-size: 3vw;
     color: black;
 }
 
