@@ -1,73 +1,33 @@
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: grid;
-    justify-content: center;
-    font-family: 'Space Grotesk', sans-serif;
+:root {
+    --font-family: 'Space Grotesk', sans-serif;
+    --spacing: 0.5rem;
 }
 
 main {
-    margin-top: 5vh;
     text-align: center;
 }
 
-h1 {
-    font-weight: bold;
-}
-
-p {
-    width: 50ch;
-    margin: 1rem;
-}
-
 img {
-    width: 14rem;
+    width: 12rem;
     border: 2px solid black;
     border-radius: 50%;
 }
 
-canvas {
-    display: block;
-}
-
 #particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
     height: 100vh;
     width: 100vw;
     z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .socials i {
     margin: 1rem;
     font-size: calc(2rem + 1vw);
-    color: black;
+    color: var(--primary);
 }
 
 .socials i:hover {
     transform: scale(1.1);
-}
-
-.button {
-    display: block;
-    width: fit-content;
-    border: 2px solid black;
-    margin: 1rem auto;
-    padding: 0.5rem 0.75rem;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.5vw;
-}
-
-.button:hover {
-    transform: scale(1.05);
 }
