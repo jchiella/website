@@ -22,12 +22,11 @@ img {
     left: 0;
 }
 
-.socials i {
-    margin: 1rem;
-    font-size: calc(2rem + 1vw);
-    color: var(--primary);
+.socials {
+    margin: var(--spacing);
 }
 
-.socials i:hover {
-    transform: scale(1.1);
+.socials a,
+.socials i {
+    margin: 0.5ch;
 }

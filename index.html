@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>James Chiella</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" href="styles.css" />
@@ -16,7 +18,7 @@
 
 <body>
     <main class="container">
-        <img src="profile.jpg" />
+        <img src="profile.jpg" alt="A picture of James" />
         <h1>Hi, I'm James Chiella.</h1>
         <p>
             I'm in my second year at the University of Toronto, where I'm double majoring in neuroscience and
@@ -25,11 +27,12 @@
             the lives of those living with chronic neurological and psychiatric conditions.
         </p>
         <div class="socials">
-            <a href="https://github.com/jchiella"><i class="fa-brands fa-github"></i></a>
-            <a href="https://linkedin.com/in/james-chiella"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="mailto:james.chiella@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/jchiella"><i class="fa-brands fa-github" aria-hidden></i>GitHub</a>
+            <a href="https://linkedin.com/in/james-chiella"><i class="fa-brands fa-linkedin-in"
+                    aria-hidden></i>LinkedIn</a>
+            <a href="mailto:james.chiella@gmail.com"><i class="fa-solid fa-envelope" aria-hidden></i>Email</a>
         </div>
-        <a role="button" href="resume.pdf">Download my resume</a>
+        <a role="button" class="outline" href="resume.pdf">Download my resume</a>
         <div id="particles-js"></div>
     </main>
     <script src="particles.js"></script>
