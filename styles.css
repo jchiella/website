@@ -1,6 +1,6 @@
 :root {
-    --font-family: 'Space Grotesk', sans-serif;
-    --spacing: 0.5rem;
+    /* --pico-font-family: 'Libertinus Serif', serif; */
+    --pico-font-family: 'Space Grotesk', sans-serif;
 }
 
 main {
