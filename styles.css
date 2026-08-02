@@ -10,9 +10,6 @@ main {
 @media only screen and (max-width: 768px) {
     main {
         flex-direction: column;
-    }
-
-    .sidebar {
         text-align: center;
     }
 }
@@ -20,6 +17,10 @@ main {
 @media only screen and (min-width: 768px) {
     main {
         flex-direction: row;
+    }
+
+    .content {
+        margin: 0 3rem;
     }
 }
 
@@ -30,6 +31,10 @@ hgroup {
 header,
 footer {
     padding: 0 1rem !important;
+}
+
+footer {
+    color: gray;
 }
 
 img {
@@ -68,6 +73,6 @@ img {
     list-style-type: none;
 }
 
-.links i {
-    margin: 0 1ch;
+i {
+    margin-right: 1ch;
 }
